@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyectos Interdisciplinarios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/jpg" href="imagenes/logo.jpg">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="proyecto.css" />
+</head>
+<body>
+  <header>
+    <img src="imagenes/logo.jpg" alt="Logo" class="logo-header">
+    <h1>Proyectos Interdisciplinarios</h1>
+    <nav id="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="proyecto2.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="proyecto-section">
+      <div class="tarjetas-grid">
+
+        <div class="tarjeta-zona">
+          <div class="card card1">
+            <span class="title">Lengua y Literatura</span>
+            <button class="abrir-btn">Abrir</button>
+          </div>
+          <div class="subtarjetas-container">
+            <div class="subtarjeta"><div class="card card1">Con Ciencias Sociales<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card1">Con Inglés<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card1">Con Educación Artística<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card1">Con Filosofía<br><button class="btn-mas">Más</button></div></div>
+          </div>
+        </div>
+
+        <div class="tarjeta-zona">
+          <div class="card card2">
+            <span class="title">Matemática</span>
+            <button class="abrir-btn">Abrir</button>
+          </div>
+          <div class="subtarjetas-container">
+            <div class="subtarjeta"><div class="card card2">Con Física<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card2">Con Química<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card2">Con Informática<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card2">Con Ciencias Naturales<br><button class="btn-mas">Más</button></div></div>
+          </div>
+        </div>
+
+        <div class="tarjeta-zona">
+          <div class="card card3">
+            <span class="title">Ciencias Sociales</span>
+            <button class="abrir-btn">Abrir</button>
+          </div>
+          <div class="subtarjetas-container">
+            <div class="subtarjeta"><div class="card card3">Con Lengua y Literatura<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card3">Con Educación Artística<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card3">Con Filosofía<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card3">Con Educación Física<br><button class="btn-mas">Más</button></div></div>
+          </div>
+        </div>
+
+        <div class="tarjeta-zona">
+          <div class="card card4">
+            <span class="title">Ciencias Naturales</span>
+            <button class="abrir-btn">Abrir</button>
+          </div>
+          <div class="subtarjetas-container">
+            <div class="subtarjeta"><div class="card card4">Con Matemáticas<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card4">Con Educación Física<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card4">Con Tecnología<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card4">Con Informática<br><button class="btn-mas">Más</button></div></div>
+          </div>
+        </div>
+
+        <div class="tarjeta-zona">
+          <div class="card card5">
+            <span class="title">Tecnología / Informática</span>
+            <button class="abrir-btn">Abrir</button>
+          </div>
+          <div class="subtarjetas-container">
+            <div class="subtarjeta"><div class="card card5">Con Matemáticas<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card5">Con Ciencias<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card5">Con Arte<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card5">Con Ciencias Sociales<br><button class="btn-mas">Más</button></div></div>
+          </div>
+        </div>
+
+        <div class="tarjeta-zona">
+          <div class="card card6">
+            <span class="title">Módulo Interdisciplinario</span>
+            <button class="abrir-btn">Abrir</button>
+          </div>
+          <div class="subtarjetas-container subtarjetas-3">
+            <div class="subtarjeta"><div class="card card6">Con Filosofía<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card6">Con Ética<br><button class="btn-mas">Más</button></div></div>
+            <div class="subtarjeta"><div class="card card6">Con Educación Física<br><button class="btn-mas">Más</button></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Proyecto. Proyectos modular y área.
+  </footer>
+  <script>
+    document.querySelectorAll('.tarjeta-zona').forEach(function(zona) {
+      const btn = zona.querySelector('.abrir-btn');
+      const subtarjetas = zona.querySelector('.subtarjetas-container');
+      subtarjetas.style.display = "none";
+      subtarjetas.style.opacity = "0";
+      function setPosition() {
+        if(window.innerWidth > 900) {
+          subtarjetas.style.position = "absolute";
+          subtarjetas.style.left = "100%";
+          subtarjetas.style.marginLeft = "24px";
+          subtarjetas.style.top = "0";
+          subtarjetas.style.width = "360px";
+          subtarjetas.style.minWidth = "320px";
+          subtarjetas.style.maxWidth = "400px";
+        } else {
+          subtarjetas.style.position = "static";
+          subtarjetas.style.left = "unset";
+          subtarjetas.style.marginLeft = "unset";
+          subtarjetas.style.top = "unset";
+          subtarjetas.style.width = "98vw";
+          subtarjetas.style.minWidth = "unset";
+          subtarjetas.style.maxWidth = "unset";
+        }
+      }
+      setPosition();
+      window.addEventListener('resize', setPosition);
+
+      btn.addEventListener('click', function() {
+        if (subtarjetas.style.display === "none") {
+          subtarjetas.style.display = "grid";
+          setTimeout(() => subtarjetas.style.opacity = "1", 10);
+          btn.textContent = "Cerrar";
+        } else {
+          subtarjetas.style.opacity = "0";
+          btn.textContent = "Abrir";
+          setTimeout(() => subtarjetas.style.display = "none", 400);
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('main-nav');
+      toggle.addEventListener('click', function () {
+        nav.classList.toggle('open');
+        toggle.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+      });
+
+      nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          document.body.classList.remove('menu-open');
+        });
+      });
+      document.addEventListener('click', e => {
+        if (nav.classList.contains('open') && !nav.contains(e.target) && e.target !== toggle) {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          document.body.classList.remove('menu-open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
